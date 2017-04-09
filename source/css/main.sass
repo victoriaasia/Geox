@@ -24,6 +24,8 @@
     right: 15px
     top: 0
     z-index: 99
+    @include bp-table
+      font-size: 1.2em
 
 .g-block
   position: relative
@@ -44,6 +46,8 @@
         position: relative
         @include bp-table
           height: 305px
+        @include bp-max-480
+          height: 230px
       .g-button
         position: absolute
       @include bp-table
@@ -119,6 +123,9 @@
   @include bp-table
     width: 80px
     height: 80px
+  @include bp-min-600
+    width: 100px
+    height: 100px
   &-txt
     width: 200px
     height: 60px
@@ -127,6 +134,10 @@
     border-radius: 30px
     @include bp-table
       height: auto
+    @include bp-min-600
+      width: 230px
+      height: 60px
+      padding: 20px 35px
   &:hover
     box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6)
   span
@@ -208,6 +219,10 @@
     transform: translateX(-50%)
     @include bp-table
       bottom: 265px
+    @include bp-min-600
+      bottom: 255px
+    @include bp-max-480
+      bottom: 190px
 
 
 .g-third
@@ -237,6 +252,8 @@
     transform: translateX(-50%)
     @include bp-table
       bottom: -38px
+    @include bp-min-600
+      bottom: -50px
 
 
 .g-fourth
@@ -304,6 +321,8 @@
       transform: translateX(-50%)
   .g-button
     margin: 30px auto 0
+    @include bp-min-600
+      bottom: -50px
   h3
     padding: 25px 0
     span:first-child
@@ -359,7 +378,7 @@
   align-items: center
   justify-content: flex-start
   padding: 0 20px
-  @include bp-table-600
+  @include bp-max-600
     background-position: top right !important
   @include bp-table
     background: url('../assets/img/block7-mob.png') no-repeat
@@ -442,7 +461,7 @@
     @include bp-table
       width: 80px
       height: 80px
-    @include bp-table-600
+    @include bp-max-600
       width: 15vw
       height: 15vw
       margin: 0 2vw

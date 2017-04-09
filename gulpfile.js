@@ -31,7 +31,7 @@ gulp.task('sass', function() {
       .pipe(concat('styles.css'))
       .pipe(autoprefixer({
         browsers: [
-          'last 2 versions',
+          'last 4 versions',
           'iOS >= 8',
           'Safari >= 5'
         ],
@@ -45,7 +45,7 @@ gulp.task('sass', function() {
 
 gulp.task('img', function() {
   gulp.src(['source/assets/img/*.*', 'source/assets/img/mob/*.*'])
-    // .pipe(image())
+    .pipe(image())
     .pipe(gulp.dest('dest/assets/img'))
     .pipe(browserSync.reload({stream:true}))
 });

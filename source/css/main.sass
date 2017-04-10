@@ -465,23 +465,49 @@
     justify-content: center
   .g-vk
     background: url('../assets/img/vk.png') no-repeat
+    background-position: -75px -5px
+    &:hover
+      background-position: -5px -5px
+    @include bp-table
+      background-position: -110px -10px
+      &:hover
+        background-position: -10px -10px
+    @include bp-max-480
+      background-position: -70px -5px
+      &:hover
+        background-position: -5px -5px
   .g-fb
     background: url('../assets/img/fb.png') no-repeat
+    background-size: contain !important
   .g-tw
     background: url('../assets/img/tw.png') no-repeat
+    background-position: -5px -5px
+    &:hover
+      background-position: -75px -5px
+    @include bp-table
+      background-position: -10px -10px
+      &:hover
+        background-position: -110px -10px
+    @include bp-max-480
+      background-position: -5px -5px
+      &:hover
+        background-position: -70px -5px
   .g-ok
     background: url('../assets/img/ok.png') no-repeat
+    background-size: contain !important
   .g-social-icon
     display: block
     border-radius: 50%
     width: 60px
     height: 60px
-    background-size: contain
-    margin: 0 15px
+    background-size: 140px
+    margin: 0 10px
     @include bp-table
       width: 80px
       height: 80px
-    @include bp-max-600
-      width: 15vw
-      height: 15vw
+      background-size: 200px
       margin: 0 2vw
+    @include bp-max-480
+      width: 60px
+      height: 60px
+      background-size: 130px

@@ -4,6 +4,7 @@
 *
   box-sizing: border-box
   letter-spacing: 0.04em
+  cursor: default
 .g-container
   width: 980px
   margin: 0 auto
@@ -53,8 +54,6 @@
       @include bp-table
         height: 800px
         background-size: cover
-
-
   @include bp-table
     padding: 0
     justify-content: center
@@ -171,10 +170,6 @@
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-
-
-
-
 
 
 .g-first
@@ -465,68 +460,68 @@
     display: flex
     align-items: center
     justify-content: center
-  .g-social-icon
-    display: block
-    background: url('../assets/img/socials.png') no-repeat
-    border-radius: 50%
+.g-social-icon
+  display: block
+  background: url('../assets/img/socials.png') no-repeat
+  border-radius: 50%
+  width: 60px
+  height: 60px
+  background-size: 500px
+  margin: 0 10px
+  @include bp-table
+    width: 80px
+    height: 80px
+    background-size: 660px
+    margin: 0 2vw
+  @include bp-max-480
     width: 60px
     height: 60px
     background-size: 500px
-    margin: 0 10px
-    @include bp-table
-      width: 80px
-      height: 80px
-      background-size: 660px
-      margin: 0 2vw
-    @include bp-max-480
-      width: 60px
-      height: 60px
-      background-size: 500px
-  .g-vk
+.g-vk
+  background-position: -375px 0
+  &:hover
+    background-position: -440px 0
+  @include bp-table
+    background-position: -494px 0
+    &:hover
+      background-position: -577px 0
+  @include bp-max-480
     background-position: -375px 0
     &:hover
       background-position: -440px 0
-    @include bp-table
-      background-position: -494px 0
-      &:hover
-        background-position: -577px 0
-    @include bp-max-480
-      background-position: -375px 0
-      &:hover
-        background-position: -440px 0
-  .g-fb
+.g-fb
+  background-position: 0 0
+  &:hover
+    background-position: -62px 0
+  @include bp-table
+    background-position: 0 0
+    &:hover
+      background-position: -82px 0
+  @include bp-max-480
     background-position: 0 0
     &:hover
       background-position: -62px 0
-    @include bp-table
-      background-position: 0 0
-      &:hover
-        background-position: -82px 0
-    @include bp-max-480
-      background-position: 0 0
-      &:hover
-        background-position: -62px 0
-  .g-tw
+.g-tw
+  background-position: -250px 0
+  &:hover
+    background-position: -312px 0
+  @include bp-table
+    background-position: -330px 0
+    &:hover
+      background-position: -412px 0
+  @include bp-max-480
     background-position: -250px 0
     &:hover
       background-position: -312px 0
-    @include bp-table
-      background-position: -330px 0
-      &:hover
-        background-position: -412px 0
-    @include bp-max-480
-      background-position: -250px 0
-      &:hover
-        background-position: -312px 0
-  .g-ok
+.g-ok
+  background-position: -125px 0
+  &:hover
+    background-position: -188px 0
+  @include bp-table
+    background-position: -165px 0
+    &:hover
+      background-position: -248px 0
+  @include bp-max-480
     background-position: -125px 0
     &:hover
       background-position: -188px 0
-    @include bp-table
-      background-position: -165px 0
-      &:hover
-        background-position: -248px 0
-    @include bp-max-480
-      background-position: -125px 0
-      &:hover
-        background-position: -188px 0

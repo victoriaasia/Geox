@@ -151,6 +151,7 @@
 .g-button {
   text-align: center; }
   .g-button-txt, .g-button-img {
+    display: block;
     position: relative;
     background: -webkit-gradient(linear, left top, right top, from(#ff377d), to(#ff8340));
     background: -webkit-linear-gradient(left, #ff377d, #ff8340);
@@ -161,6 +162,7 @@
     text-align: center;
     outline: none;
     border: 0;
+    text-decoration: none;
     -webkit-box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.4);
     cursor: pointer;

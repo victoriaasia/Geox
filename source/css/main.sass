@@ -3,7 +3,7 @@
 
 *
   box-sizing: border-box
-  letter-spacing: 0.04em  
+  letter-spacing: 0.04em
 .g-container
   width: 980px
   margin: 0 auto
@@ -95,9 +95,9 @@
       &:nth-child(2)
         border-top: 2px dotted grey
         padding-top: 15px
-
-    .g-button
-      margin: 40px auto 75px
+    //
+    // .g-button
+    //   margin: 40px auto 75px
   &-white
     color: white
     background: rgba(black, 0.3)
@@ -201,6 +201,7 @@
     @include bp-table
       right: 0
   .g-button-txt
+    margin: 40px auto 75px
     span::after
       right: -40px
 
@@ -306,19 +307,15 @@
     right: 30px
     @include bp-table
       right: 0
-  .g-button
+  .g-button-txt
     margin: 30px auto 0
 
-
 .g-fifth
-  background: url('../assets/img/block5.png') no-repeat
-  background-size: cover
   height: 420px
-  display: flex
-  align-items: center
-  justify-content: flex-end
+  padding: 0
+  background: $grey
   @include bp-table
-    background: url('../assets/img/block5-mob.png') no-repeat
+    background: url('../assets/img/block5-mob.jpg') no-repeat
     background-size: cover
     height: 1000px
     align-items: flex-end
@@ -328,16 +325,37 @@
       background: $grey
       width: 100%
       padding: 30px 10% 60px
-    .g-button
-      position: absolute
-      bottom: -38px
-      left: 50%
-      transform: translateX(-50%)
+  &__container
+    width: 100%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    padding: 15px 55px 45px
+    background: white
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    @include bp-table
+      height: 100%
+      background: transparent
+      padding: 0
+      align-items: flex-end
   .g-button
-    margin: 30px auto 0
-    padding: 0 10px
+    position: absolute
+    bottom: -80px
+    left: 50%
+    transform: translateX(-50%)
+    @include bp-table
+      bottom: -38px
     @include bp-min-600
       bottom: -50px
+  .g-decor
+    position: relative
+    left: 0
+    z-index: 99
+    height: 100%
+    @include bp-table
+      display: none
   h3
     padding: 25px 0
     span:first-child
@@ -348,6 +366,10 @@
       margin-left: 120px
       @include bp-table
         margin-left: 30vw
+  p br
+    display: none
+    @include bp-table
+      display: block
 
 .g-sixth
   height: 410px
@@ -382,7 +404,7 @@
       right: 35px
       @include bp-table
         right: -80px
-  .g-button
+  .g-button-txt
     margin: 30px auto 0
 
 .g-seventh
